@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <h1> To-Do-list</h1>
+    <input type="text" class="data" placeholder="Add a new task..." onkeydown=" kkeu(event)
+    "> 
+    <button class="tt" onclick="insert()" >+</button>
+    <p></p>
+    <script>
+    function  kkeu(event){
+       // console.log (event.key); print each line i write in input 
+        if(event.key==='Enter'){
+            insert();
+        }
+
+    }
+    function insert(){
+            console.log("hello")
+            console.log( document.querySelector('.data').value);
+        let toggle =document.querySelector('.tt');
+        if (toggle.innerHTML =='+'){
+            document.querySelector('.tt').innerHTML='++';
+            
+        }else{
+            document.querySelector('.tt').innerHTML='+';
+
+        }}
+    </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+    body {
+      background-color: #111;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    h1 {
+      margin-top: 90px;
+      color: aliceblue;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #313131;
+    }
+
+    .navbar-brand i {
+      color: aliceblue;
+    }
+
+    .btnss {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.05);
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .emoji {
+      background: transparent;
+      border: none;
+      transition: transform 0.3s;
+    }
+
+    .emoji img {
+      width: 100px;
+      padding: 5px;
+    }
+
+    .emoji:hover {
+      transform: scale(1.1);
+    }
+
+    .result {
+      font-size: 36px;
+      color: #28a745;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .scores {
+      color: #ddd;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .vs {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+
+    .vsp {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      width: 100%;
+    }
+
+    .vsp .text-center p {
+      margin: 5px 0 0;
+      color: white;
+    }
+
+    .btn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+    .bubble {
+        position: absolute;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.08);
+        animation: float 12s ease-in-out infinite;
+        filter: blur(2px);
+    }
+
+    .bubble {
+        position: absolute;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.2);
+        filter: blur(1px);
+        animation: float 10s infinite ease-in-out;
+        }
+
+        @keyframes float {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(var(--x), var(--y));
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+        }

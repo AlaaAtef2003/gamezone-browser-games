@@ -1,0 +1,162 @@
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #111;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      background-color: #313131;
+    }
+
+    .navbar-brand i {
+      color: aliceblue;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      gap: 60px;
+      margin-top: 50px
+    }
+
+    .left-panel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .left-panel img {
+      width: 250px;
+      height: 250px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+
+    .controls {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .controls .row {
+      display: flex;
+      justify-content: center;
+    }
+
+    .controls button {
+      width: 60px;
+      height: 60px;
+      font-size: 1.5rem;
+      margin: 5px;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      transition: transform 0.1s, background-color 0.3s;
+    }
+
+    .controls button:hover {
+      background-color: #666;
+    }
+
+    .controls button:active {
+      transform: scale(0.95);
+      background-color: #888;
+    }
+
+ .game-board {
+  width: 90vw; /* العرض = 90% من عرض الشاشة */
+  max-width: 420px; /* الحد الأقصى للعرض */
+  aspect-ratio: 1 / 1; /* يجعل الارتفاع مساوي للعرض تلقائياً */
+  
+  display: grid;
+  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(21, 1fr);
+  
+  background-color: #333;
+  border: 3px solid #555;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  border-radius: 10px;
+  position: relative;
+}
+
+
+    .snake {
+      background-color: rgb(41, 138, 223);
+      border: 1px solid #222;
+      border-radius: 30%;
+      box-shadow: 0 0 6px rgba(41, 138, 223, 0.7);
+    }
+
+    .food {
+      background-color: red;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    }
+
+    @media (max-width: 768px) {
+      .main {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    
+    .bubble {
+        position: absolute;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.08);
+        animation: float 12s ease-in-out infinite;
+        filter: blur(2px);
+        z-index: -1;
+    }
+
+    .bubble {
+        position: absolute;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.2);
+        filter: blur(1px);
+        animation: float 10s infinite ease-in-out;
+        }
+
+        @keyframes float {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(var(--x), var(--y));
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+        }
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+
+      background-color: #313131;
+    }
+
+    .navbar-brand i {
+      color: aliceblue;
+    }
+    .right-panel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 20px;
+    }
