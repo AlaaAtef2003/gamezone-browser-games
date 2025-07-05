@@ -18,8 +18,7 @@ Welcome to **GameZone**, a collection of fun, interactive browser games develope
 ## 🚀 Demo
 
 > **Live Demo:** *Coming soon!*  
-> For now, you can run the project locally by following the steps below.
-
+>
 ---
 
 ## 💻 Technologies Used
