@@ -42,6 +42,11 @@
             localStorage.setItem('record', JSON.stringify(score));
             updateScores();
             gameOver = true;
+            confetti({
+            particleCount: 200,
+            spread: 90,
+            origin: { y: 0.2 }
+            });
             return;
         }
 

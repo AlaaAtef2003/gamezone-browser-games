@@ -21,7 +21,13 @@
             result = 'loss';
             score.loss++;
         }
-
+        if ( result === 'win'){
+            confetti({
+            particleCount: 200,
+            spread: 90,
+            origin: { y: 0.2 }
+            });
+        }
         localStorage.setItem('score', JSON.stringify(score));
         document.querySelector('.result').textContent = `You ${result}`;
         document.querySelector('.info').innerHTML = `

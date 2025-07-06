@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    position: relative;
 }
 .navbar{
         position: fixed;
@@ -119,6 +120,7 @@ h1 {
     color: #333;
     padding: 5px ;
     cursor: pointer;
+    
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
@@ -152,7 +154,7 @@ h1 {
 @media (max-width: 500px) {
     .main1 {
         grid-template-columns: repeat(3, 60px);
-        gap: 8px;
+        gap: 21px;
     }
 
 
