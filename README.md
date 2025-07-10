@@ -17,8 +17,8 @@ Welcome to **GameZone**, a collection of fun, interactive browser games develope
 
 ## 🚀 Demo
 
-> **Live Demo:** *Coming soon!*  
->
+> **Live Demo:
+>https://alaaatef2003.github.io/gamezone-browser-games/index.html
 ---
 
 ## 💻 Technologies Used
